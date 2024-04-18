@@ -24,7 +24,7 @@ This is a fork of the Blind Card by tungmeister. I needed a option to invert the
 | name | string | False | _Friendly name of the entity_ | Name to display for the blind
 | buttons_position | string | False | `left` | Set buttons on `left` or on `right` of the blind
 | title_position | string | False | `top` | Set title on `top` or on `bottom` of the blind
-| invert_percentage | boolean | False | `false` | Set it to `true` if your blind is 100% when it is closed, and 0% when it is opened
+| invert_percentage | boolean | False | `false` | Set it to `true` to invert the direction of the blind: 0% corresponds to open and 100% to closed
 | invert_commands | boolean | False | `false` | Set it to true if you want to invert the up/down buttons to match your motors direction
 | blind_color | string | False | 'white' | Set blind Color e.g. `green` or hex `#00FF00`
 
