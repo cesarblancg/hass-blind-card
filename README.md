@@ -32,6 +32,13 @@ This is a fork of the Blind Card by tungmeister. I needed a option to invert the
 
 _Remark : you can also just give the entity ID (without to specify `entity:`) if you don't need to specify the other configurations._
 
+
+### Window monitor
+
+If you have a window or door sensor, you can specify it using the ‘window_entity’ entity. When the window is opened, the card will become inoperative, disabling the buttons. A message (specified by the ‘window_message’ entity) will be displayed, and the image will change accordingly.
+
+![Colored Blind](https://raw.githubusercontent.com/tungmeister/hass-blind-card/master/images/window_opened.png)
+
 ### Sample
 
 ```yaml
@@ -47,6 +54,7 @@ entities:
   - cover.bedroom_blind
 ```
 ![Colored Blind](https://raw.githubusercontent.com/tungmeister/hass-blind-card/master/images/colored.png)
+
 
 ## Install
 
