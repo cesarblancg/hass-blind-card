@@ -27,8 +27,17 @@ This is a fork of the Blind Card by tungmeister. I needed a option to invert the
 | invert_percentage | boolean | False | `false` | Set it to `true` to invert the direction of the blind: 0% corresponds to open and 100% to closed
 | invert_commands | boolean | False | `false` | Set it to true if you want to invert the up/down buttons to match your motors direction
 | blind_color | string | False | 'white' | Set blind Color e.g. `green` or hex `#00FF00`
+| window_entity | string | False | - | Set the window entity to monitor if it is open
+| window_message | string | False | 'Open' | Set the message to display when the window is open.
 
 _Remark : you can also just give the entity ID (without to specify `entity:`) if you don't need to specify the other configurations._
+
+
+### Window monitor
+
+If you have a window or door sensor, you can specify it using the ‘window_entity’ entity. When the window is opened, the card will become inoperative, disabling the buttons. A message (specified by the ‘window_message’ entity) will be displayed, and the image will change accordingly.
+
+![Colored Blind](https://raw.githubusercontent.com/tungmeister/hass-blind-card/master/images/window_opened.png)
 
 ### Sample
 
@@ -41,9 +50,11 @@ entities:
     buttons_position: left
     title_position: bottom
     blind_color: '#FFD580'
+    window_entity: binary_sensor.window_bedroom_contact
   - cover.bedroom_blind
 ```
 ![Colored Blind](https://raw.githubusercontent.com/tungmeister/hass-blind-card/master/images/colored.png)
+
 
 ## Install
 
