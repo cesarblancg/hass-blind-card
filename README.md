@@ -37,8 +37,7 @@ _Remark : you can also just give the entity ID (without to specify `entity:`) if
 
 If you have a window or door sensor, you can specify it using the ‘window_entity’ entity. When the window is opened, the card will become inoperative, disabling the buttons. A message (specified by the ‘window_message’ entity) will be displayed, and the image will change accordingly.
 
-![Open sensor]([https://raw.githubusercontent.com/tungmeister/hass-blind-card/master/images/window_opened.png](https://github.com/cesarblancg/hass-blind-card/blob/master/images/window_opened.png))
-
+![Open sensor](https://raw.githubusercontent.com/cesarblancg/hass-blind-card/master/images/window_opened.png)
 ### Sample
 
 ```yaml
